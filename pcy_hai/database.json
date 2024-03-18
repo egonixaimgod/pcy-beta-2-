@@ -1,0 +1,54 @@
+{
+    "brands": [
+        { "id" : 1, "name": "Intel"},
+        { "id" : 2, "name": "Amd"},
+        { "id" : 3, "name": "G.Skill"},
+        { "id" : 4, "name": "Gigabyte"},
+        { "id" : 5, "name": "MSI"}
+    ],
+    "categories": [
+        { "id" : 1, "name": "Processor"},
+        { "id" : 2, "name": "Memory"},
+        { "id" : 3, "name": "Motherboard"}
+    ],
+    "customers": [
+        { "id": 1, "name": "admin", "email": "", "password": "admin", "address": "", "county": "", "city": "", "postal_code": 0, "phone": 0, "admin": "true"},
+        { "id": 2, "name": "Miss Constance Hansen MD", "email": "keely15@schoen.com", "password": "WTKPCz9Gm3", "address": "József Attila u. 1", "county": "Borsod-Abaúj-Zemplén", "city": "Szekszárd", "postal_code": 8045, "phone": 0, "admin": "false"},
+        { "id": 3, "name": "Houston Purdy", "email": "brandt.ernser@hotmail.com", "password": "7ajURc61MJ", "address": "Petőfi Sándor u. 2", "county": "Borsod-Abaúj-Zemplén", "city": "Székesfehérvár", "postal_code": 7333, "phone": 0, "admin": "false"},
+        { "id": 4, "name": "Melyna Botsford", "email": "tiana77@gmail.com", "password": "14DFp9kMEi", "address": "Ady Endre u. 3", "county": "Tolna", "city": "Pécs", "postal_code": 5082, "phone": 0, "admin": "false"},
+        { "id": 5, "name": "Fay Balistreri", "email": "vgibson@gmail.com", "password": "ydMgdxbq75", "address": "Deák Ferenc u. 4", "county": "Heves", "city": "Tatabánya", "postal_code": 8985, "phone": 0, "admin": "false"}
+    ],
+    "orders": [
+        { "id": 1, "customer_id": 2, "payment_id": 2},
+        { "id": 2, "customer_id": 2, "payment_id": 2},
+        { "id": 3, "customer_id": 3, "payment_id": 1},
+        { "id": 4, "customer_id": 4, "payment_id": 3},
+        { "id": 5, "customer_id": 4, "payment_id": 2},
+        { "id": 6, "customer_id": 5, "payment_id": 1}
+    ],
+    "order_items": [
+        { "id": 1, "order_id": 1, "product_id": 1, "amount": 1},
+        { "id": 2, "order_id": 1, "product_id": 2, "amount": 1},
+        { "id": 3, "order_id": 1, "product_id": 4, "amount": 1},
+        { "id": 4, "order_id": 2, "product_id": 3, "amount": 1},
+        { "id": 5, "order_id": 3, "product_id": 1, "amount": 2},
+        { "id": 6, "order_id": 3, "product_id": 4, "amount": 1},
+        { "id": 7, "order_id": 3, "product_id": 6, "amount": 1},
+        { "id": 8, "order_id": 4, "product_id": 1, "amount": 1},
+        { "id": 9, "order_id": 5, "product_id": 1, "amount": 1},
+        { "id": 10, "order_id": 6, "product_id": 1, "amount": 1}
+    ],
+    "payment": [
+        { "id": 1, "status": "B"},
+        { "id": 2, "status": "P"},
+        { "id": 3, "status": "V"}
+    ],
+    "products": [
+        { "id": 1, "category_id": "1", "brand_id": "1", "name": "i7-11700k", "cost": "117000", "amount": 100},
+        { "id": 2, "category_id": "1", "brand_id": "2", "name": "Ryzen 5 5600x", "cost": "Ryzen 5 5600x", "amount": 100},
+        { "id": 3, "category_id": "2", "brand_id": "3", "name": "16GB DDR4 3200MHz CL16 Trident Z RGB", "cost": "25000", "amount": 100},
+        { "id": 4, "category_id": "2", "brand_id": "4", "name": "16GB DDR4 3733MHz Kit Aorus RGB", "cost": "26000", "amount": 100},
+        { "id": 5, "category_id": "3", "brand_id": "4", "name": "B550 Gaming X V2", "cost": "45000", "amount": 100},
+        { "id": 6, "category_id": "3", "brand_id": "5", "name": "MSI MPG Z590 GAMING PLUS", "cost": "90000", "amount": 100}
+    ]
+}
