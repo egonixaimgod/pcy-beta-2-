@@ -1,4 +1,4 @@
-<div class="container px-5 mt-3">
+<div class="container px-5 py-5">
     <div>
         <h2>Kosár tartalma</h2>
         <table class="table">
@@ -17,7 +17,7 @@
         </table>
     </div>
     <div class="row">
-        <div class="col-md-auto mb-3" *ngFor="let item of cartItems">
+        <div class="col-md-auto py-3" *ngFor="let item of cartItems">
             <div class="card" style="width: 18rem; height: 28rem;">
                 <img [src]="generateImagePath(item.name)" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -29,7 +29,13 @@
         </div>
     </div>
 </div>
-<div style="text-align: right; margin-right: 10vh;" class="mb-5">
-    <h1 style="margin-right: 3rem;">Ár: </h1>
-    <a href="#" class="btn btn-warning btn-lg" style="">Tovább!</a>
+<div class="container pb-5 px-5">
+    <div class="row">
+        <div class="col">
+            <h1>Ár: </h1>
+        </div>
+        <div class="col" style="text-align: right;">
+            <a href="#" class="btn btn-warning btn-lg">Tovább!</a>
+        </div>
+    </div>
 </div>
